@@ -1,0 +1,20 @@
+{
+  "name": "prom-grafana-loki",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vineetjk/prom-grafana-loki.git",
+  "author": "vineet jk <vinwinit3@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon dist/index.js",
+    "build": "tsc",
+    "dev-compile": "tsc -w"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17"
+  }
+}
