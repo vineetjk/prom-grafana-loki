@@ -17,18 +17,6 @@ jobs:
       run: npm install
     - name: Build TypeScript
       run: npm run build
-    - name: Create dist folder
-      run: mkdir -p dist
-
-    - name: Copy built files to dist folder
-      run: cp -R * dist/
-
-    - name: Clean up unnecessary files
-      run: |
-        cd dist
-        rm -rf node_modules
-        rm -f package.json package-lock.json
-
     - name: Archive dist folder
       uses: actions/upload-artifact@v2
       with:
